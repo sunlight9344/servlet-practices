@@ -14,8 +14,7 @@ public class HelloServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset=utf-8");
 		PrintWriter pw = response.getWriter();
-		
-		pw.print("<h1>Hello World serlvet</h1>");	
+		pw.print("<h1>Hello Servlet</h1>");	
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
