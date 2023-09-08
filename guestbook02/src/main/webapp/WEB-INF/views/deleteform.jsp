@@ -9,7 +9,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="/guestbook02/gb" method="post">
+	<form action="<%=request.getContextPath() %>/gb" method="post">
 		<input type='hidden' name="no" value="<%=no%>">
 		<input type="hidden" name="a" value="delete">
 		<table>
@@ -17,7 +17,7 @@
 				<td>비밀번호</td>
 				<td><input type="password" name="password"></td>
 				<td><input type="submit" value="확인"></td>
-				<td><a href="/guestbook02/gb">메인으로 돌아가기</a></td>
+				<td><a href="/<%=request.getContextPath() %>/gb">메인으로 돌아가기</a></td>
 			</tr>
 		</table>
 	</form>
