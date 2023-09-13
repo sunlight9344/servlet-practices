@@ -4,6 +4,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	String row = request.getParameter("r");
+	String col = request.getParameter("c");
+	
+	int nRow = Integer.parseInt(row);
+	int nCol = Integer.parseInt(col);
 %>
 <!DOCTYPE html>
 <html>
@@ -13,6 +17,9 @@
 </head>
 <body>
 	<table border="1" cellspacing="0" cellpadding="10">
+
+	
+	
 		<tr>
 			<td>Cell(0, 0)</td>
 			<td>Cell(0, 1)</td>
