@@ -5,7 +5,7 @@
 <%@page import="com.poscodx.guestbook.dao.GuestBookDao"%>
 <%@page import="java.util.List"%>
 <%
-	List<GuestBookVo> list = new GuestBookDao().findAll();
+List<GuestBookVo> list = new GuestBookDao().findAll();
 %>
 <html>
 <head>
@@ -31,8 +31,8 @@
 	
 	<%
 		int cnt = 1;
-		for(GuestBookVo vo:list){
-	%>
+				for(GuestBookVo vo:list){
+		%>
 	<table width=510 border=1>
 		<tr>
 			<td><%=cnt %></td>

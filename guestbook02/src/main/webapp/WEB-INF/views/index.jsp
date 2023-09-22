@@ -5,7 +5,7 @@
 <%@page import="com.poscodx.guestbook.dao.GuestBookDao"%>
 <%@page import="java.util.List"%>
 <%
-	List<GuestBookVo> list = (List<GuestBookVo>)(request.getAttribute("list"));
+List<GuestBookVo> list = (List<GuestBookVo>)(request.getAttribute("list"));
 %>
 <html>
 <head>
@@ -13,7 +13,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="/<%=request.getContextPath() %>/gb" method="post">
+	<form action="/<%=request.getContextPath()%>/gb" method="post">
 	<input type="hidden" name="a" value="add">
 	<table border=1 width=500>
 		<tr>
@@ -32,8 +32,8 @@
 	
 	<%
 		int cnt = 1;
-		for(GuestBookVo vo:list){
-	%>
+				for(GuestBookVo vo:list){
+		%>
 	<table width=510 border=1>
 		<tr>
 			<td><%=cnt %></td>
